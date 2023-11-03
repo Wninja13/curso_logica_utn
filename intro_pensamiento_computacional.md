@@ -65,3 +65,38 @@ Con `F(0) = 0` y `F(1) = 1`.
 En este proceso, podemos identificar una serie de etapas y actividades llevadas a cabo en las mismas. Podemos pensar que este proceso consiste en las siguientes etapas:
 
 - **ENTRADA** ➡️ **PROCESO** ➡️ **SALIDA**
+
+- **Entrada:**
+
+  - En el punto **"a"** se empieza a entender el problema. En esta etapa nos enfocamos en el **PROBLEMA** no en la solución de este. 
+  - Para poder hacer el punto anterior, debemos identificar los elementos que lo compoinen y analizarlos. *Desglosamos el problema, tomando el todo, y lo subdividimos en pequeñas tareas.*
+  - Luego de identificar cada uno de los elementos del problema, debe asignarles una importancia **(por la información que aportar)** y una urgencia **(la cantidad de atención que debemos prestarles)**. En el caso concreto, debe ser el elemento de análisis que mayor información nos da. En el ejemplo de lla serie de Fibonacci sería cuales son los números que componen la primera serie.
+
+- **Proceso:**
+  - En el punto **"b"**, nos enfocamos en generar opciones de solución. Ya debemos dejar de enfocarnos en el problema para buscar mejor alternativa de *SOLUCIÓN*. Enumeramos las opciones que nos permiten llegar a una solución en base a lo planteado en la fase anterior **(Entrada).**
+  - Priorizamos las opciones para enfocarnos en las que nos acercan más a la construcción de la solución. 
+  - Los enunciados que determinemos probablemente estén vinculados entre sí y deberán ser organizados según su solución. Un conjunto de enunciados debe apuntar a una única solución. Esto es común cuando hay múltiples soluciones posibles o cuando no se cuenta con información completa en la fase inicial.
+  - Al final, el Proceso termina cuando se selecciona la mejor opción de solución y se cuenta con un conjunto de conceptos orientados a comprender el problema para llegar a una solución. 
+
+- **Salida:**
+  - En la fase de Salida, se propone la mejor solución a un problema previamente desglosado en la fase de Entrada y entendido en la fase de Proceso.
+  - En esta etapa se aplica y materializa la solución, usando como ejemplo la serie de Fibonacci, se obtiene una fórmula matemática que la representa de forma genérica.
+  - Es crucial realizar una evaluación de los resultados, una etapa que a menudo se pasa por alto.
+  - La evaluación, en el contexto simple de la serie de Fibonacci, sería verificar que la fórmula propuesta se ajusta a la serie al ejecutarla 8 veces consecutivas.
+  -  En situaciones más complicadas, se llevan a cabo casos de pruebas, ajustando los datos de entrada y verificando que los resultados son los esperados.
+  -  Si cambiamos el requisito inicial a "mostrar los primeros 4 números de la serie de Fibonacci desde un número específico", debemos garantizar que la solución funcione con números como 1, 2 o 13.
+
+# Nuestros casos de pruebas deberían ser:
+
+- **Ingreso: 1** 
+  - **Obtengo:** 1, 1, 2, 3, 5
+
+- **Ingreso: 2** 
+  - **Obtengo:** 2, 2, 4, 6, 10
+
+- **Ingreso: 13** 
+  - **Obtengo:** 13, 13, 26, 39, 65
+
+> [Siendo estrictamente puristas, diríamos que esta última serie de números no pertenece a Fibonacci, pero dejamos esta licencia para graficar el ejemplo].
+
+El proceso finalizaría dando por cerrado el problema, en caso de cumplir con los casos de prueba, o volviendo al inicio, en caso de haber detectado una falla en el planteo.

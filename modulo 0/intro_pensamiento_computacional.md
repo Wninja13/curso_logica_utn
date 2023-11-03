@@ -28,41 +28,41 @@ Un abordaje correcto para resolver un problema implica subdividir un problema en
 Tomando esta estrategia como base, avanzamos a la parte final de la lógica, referida al "Proceso", donde las ideas son ordenadas y organizadas, siendo este el **"qué"**.
   
 
-###2.- Resolución de problemas. 
+## 🧩 2. Resolución de problemas
 
-Ahora bien, tomemos un ejemplo práctico. Intentemos representar la serie de Fibonacci. 
+### 📌 Serie de Fibonacci
 
-La **serie de Fibonacci** es una secuencia de números en la que cada número es la suma de los dos números anteriores. Se inicia generalmente con 0 y 1.
+La **serie de Fibonacci** es una secuencia numérica donde cada elemento es la suma de los dos anteriores. Se inicia generalmente con 0 y 1.
 
 Ejemplo de la serie:
 0, 1, 1, 2, 3, 5, 8, 13, 21, ...
 
-La relación matemática es:
+La relación matemática se define como:
 F(n) = F(n-1) + F(n-2)
 
 Con `F(0) = 0` y `F(1) = 1`.
 
-### Serie de Fibonacci
-
-##### a) Información Básica
+#### 🔍 Detalles sobre la Serie de Fibonacci
 - **a.1) Naturaleza de la serie**: Es una serie de números.
 - **a.2) Tipo de números**: Son números naturales.
 - **a.3) Longitud de la serie**: Es infinita.
 - **a.4) Ejemplo finito**: 1, 1, 2, 3, 5, 8, 13, 21, 34
 
-##### b) Funcionamiento de la Serie
+#### 🔧 Funcionamiento
 - **b.1) Inicio**: Comienza en 1.
 - **b.2) Crecimiento**: Se incrementa exponencialmente.
 - **b.3) Incremento en la serie**: La serie aumenta al agregarse de a un nuevo valor en la misma.
 - **b.4) Cálculo del nuevo valor**: El nuevo valor surge de la suma del último y penúltimo valor de la serie.
 
-##### c) Interpretación
+#### 📖 Interpretación
 > **Nota**: Siendo “x” el último valor e “y” el anteúltimo.
 
 - **c.1) Cálculo**: "z = x + y", donde "z" es el nuevo valor de la serie.
 - **c.2) Repetición**: Repetir este cálculo en forma sucesiva 8 veces (para cumplir con el ejemplo finito antes mencionado).
 
 En este proceso, podemos identificar una serie de etapas y actividades llevadas a cabo en las mismas. Podemos pensar que este proceso consiste en las siguientes etapas:
+
+### 🔄 Proceso
 
 - **ENTRADA** ➡️ **PROCESO** ➡️ **SALIDA**
 
@@ -86,17 +86,34 @@ En este proceso, podemos identificar una serie de etapas y actividades llevadas 
   -  En situaciones más complicadas, se llevan a cabo casos de pruebas, ajustando los datos de entrada y verificando que los resultados son los esperados.
   -  Si cambiamos el requisito inicial a "mostrar los primeros 4 números de la serie de Fibonacci desde un número específico", debemos garantizar que la solución funcione con números como 1, 2 o 13.
 
-# Nuestros casos de pruebas deberían ser:
-
+### 🧪 Casos de prueba
 - **Ingreso: 1** 
-  - **Obtengo:** 1, 1, 2, 3, 5
+  - **Resultado**: 1, 1, 2, 3, 5
 
 - **Ingreso: 2** 
-  - **Obtengo:** 2, 2, 4, 6, 10
+  - **Resultado**: 2, 2, 4, 6, 10
 
 - **Ingreso: 13** 
-  - **Obtengo:** 13, 13, 26, 39, 65
+  - **Resultado**: 13, 13, 26, 39, 65
 
-> [Siendo estrictamente puristas, diríamos que esta última serie de números no pertenece a Fibonacci, pero dejamos esta licencia para graficar el ejemplo].
+> [Nota]: Esta última serie no es estrictamente Fibonacci.
 
 El proceso finalizaría dando por cerrado el problema, en caso de cumplir con los casos de prueba, o volviendo al inicio, en caso de haber detectado una falla en el planteo.
+
+## 🖥️ 3. Algoritmos 
+
+### 📝 3.1 Definición
+
+Un algoritmo es una abstracción que consta de instrucciones para resolver un problema mediante una secuencia de pasos. A partir de ciertos datos de entrada, se produce una solución total o parcial. Varias soluciones parciales pueden combinarse para formar una solución completa, y cada solución parcial sigue siendo un algoritmo por sí misma.
+
+## 🔍 Características de los Algoritmos 
+
+- **Secuencialidad**: Un algoritmo procede paso a paso. Se caracteriza por tener etapas intermedias donde cada paso puede ser analizado por su estado, entradas y posibles salidas.
+  
+- **Atomicidad**: Los pasos intermedios se traducen en acciones que solucionan un único problema a la vez.
+  
+- **Abstracción**: Un algoritmo es una representación abstracta, lo que significa que es independiente de cómo se implementa. Por ejemplo, considerando nuestra solución para Fibonacci.
+
+- **Solución Concreta**: Una opción es crear un programa que simplemente muestre la serie 1,1,2,3,5... Esta aproximación no se consideraría un algoritmo, dado que es una solución concreta y no abstracta.
+  
+- **Solución Genérica**: La solución ideal sería tener una fórmula que represente la serie de forma abstracta. La fórmula sería: `"anteúltimo_número + último_número = nuevo_número_de_la_serie"`.
